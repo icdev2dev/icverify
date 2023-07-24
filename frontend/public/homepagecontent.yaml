@@ -1,0 +1,6 @@
+sections: 
+  - section: 30 Second Elevator Pitch
+    content: Earn ckBTC by building and verifying guestos; the operating system that makes the Internet computer possible. With a easy to use interface, you can be on your way in less than 15 mins. This verification is required for every replica build; which is typically EVERY week. Earn even more ckBTC if you grok rust and have time to go through code.
+  - section: How to earn
+    content: Simple, easy steps to set up the infrastructure on AWS/Azure. No mucking around required on your personal laptop; if you don't want to. Then initiate the build by clicking a few buttons. Wait for results to come back and then report the results. 
+    

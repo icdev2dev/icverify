@@ -1,0 +1,36 @@
+proposals:
+  - id: 123711
+    revisionId: 0062aec2efc16d6e4cadb2cd1052aaabbc9f6e48
+    proposalStatus: Open
+    sections:
+      - section: Runtime
+        summary: Adding a Wasm function complexity metric, introducing a field for resource reservation to replicated state, and incorporating a subnet memory threshold config parameter
+      - section: Node
+        summary: Bug fixing for config partition population in SetupOS, updating the admin file path in config partition, including guest kernel for SEV-SNP in guestos, and enhancing terminal logs for increased clarity
+      - section: Networking
+        summary: Addition of UDP protocol support to the node whitelisting in the firewall, improvement in quic transport metrics, fixing the firewall to add nodes in registries to the node whitelist since the last CUP, and reducing the quic transport connection timeout
+      - section: Message Routing
+        summary: An addition of 64kB write buckets to improve message handling
+      - section: Execution
+        summary:  An improvement to make the payload exceeded error message more readable, and a fix to correctly charge for message memory consumed by canisters
+      - section: Crypto
+        summary: A new feature implementation of Identity-Based Encryption (IBE) into the "vetkd packages crate."
+      - section: Consensus
+        summary: A chore task in "ic-recovery" to get "batch_time" from the source subnet cup, and a refinement to depend on "ic-backtrace" only on Linux for Cargo
+  - id: 123474
+    revisionId: 97df774f8cb88ca1a00e26dc3daa19735ad3599a
+    proposalStatus: Accepted
+    sections: 
+      - section: Runtime
+        summary: Adjusting the error message for allocation errors and checking the freezing threshold on memory grow and canister allocation changes
+      - section: Node
+        summary: Updating IC join notification message, directing setupOS error messages to a matrix channel, fixing a bug preventing config partition population, and adding checks for the freezing threshold on memory allocation and canister allocation changes
+      - section: Networking
+        summary: Improving state sync manager metrics, supporting uni streams in quic transport, allowing state sync manager chunk timeouts, and increasing bitcoin adapter default timeout to 50 ms
+      - section: Message Routing
+        summary: Not incrementing critical error counter in message routing for "registry not available yet" error
+      - section: Crypto
+        summary: Adding initial vetKD utils package, returning errors instead of panicking in load_threshold_signing_key_internal, limiting the number of paths and labels for read state requests, and improving performance using mul2 in naive multi-exponentiation in BLS12_381
+      - section: Consensus
+        summary: Canister Http Bytes Migration, cleaning up old ECDSA backward compatibility patching, combining signature and version checks during validation, not relaying consensus and certification shares, and adding a metric counting failed upgrade checks while fixing orchestrator termination and manageboot.sh handling
+        
